@@ -8,8 +8,25 @@
             font-weight: bold;
             text-transform: uppercase;
             text-align: center;
-            color: white; /* White text */
-            background-color: transparent; /* Transparent background */
+            color: white;
+            background-color: transparent;
+            white-space: nowrap; /* Keeps text in one line */
+            overflow: hidden; /* Hides overflow */
+            text-overflow: ellipsis; /* Adds ellipsis if text overflows */
+            width: 100%; /* Full width */
+        }
+
+        /* Adjusts font size based on screen width */
+        @media (max-width: 600px) {
+            .date-container {
+                font-size: 36px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .date-container {
+                font-size: 24px;
+            }
         }
     </style>
 </head>
